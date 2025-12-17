@@ -111,7 +111,7 @@ img {
     width: 60%;
 }
 
-.about__image--wrapper,
+.about__image--wrapper, 
 .section__description--wrapper {
     margin: 0 24px;
 }
@@ -188,6 +188,10 @@ footer {
         flex-direction: column;
     }
 
+    header {
+        height: auto;
+    }
+
     .home__description {
         margin-bottom: 24px;
         display: flex;
@@ -222,10 +226,32 @@ footer {
     }
 
     .about__image--wrapper {
-        width: 100%;
+        width: calc(100% - 48px);
+    }
+
+    .section__description--para {
+        margin-left: 24px;
+        margin-right: 24px; 
     }
 
     #discord .section__description {
         flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+    .footer__logo {
+        max-width: 360px;
+    } 
+
+    .footer__link {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links {
+        margin-bottom: 24px;
     }
 }
